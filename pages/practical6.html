@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practical-6</title>
+    <title>Practical 6</title>
     <style>
-        body{
-            background-color: silver;
-            padding: 2px;
-            color: white;
+        body {
+            background-color: gray;
         }
-        .box{
+
+        .container {
+            margin-top: 50px;
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+        }
 
-        }
-        .oper{
-            margin: 2.5%;
+        .card {
             width: 20%;
-            min-height: 100vh;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 2%;
+            overflow: hidden;
         }
-        #box1{
-            background-color: blue;
+
+        .card img {
+            width: 100%;
         }
-        #box2{
-            background-color: rgb(0, 255, 106);
-        }
-        #box3{
+
+        .card div {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
             background-color: red;
         }
-        #box4{
-            background-color: pink;
+
+        .card div:hover {
+            background-color: blue;
         }
-        img{
-            object-fit: contain;
+
+        .card div a {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
+
 <body>
-    <h1>PRACTICAL-6:CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
-    <div class="box">
-        <div class="oper" id="box1">
-            <img src="../images/html.png" alt="">
-            <h3>Introduction to HTML.</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae corrupti ipsum at ipsam numquam expedita eos odio, dolore, consequatur error facere voluptate maiores voluptatum placeat. Unde perferendis quas ducimus incidunt.
-            Quidem nobis, magnam sit ad animi distinctio repellat tempora cumque, ratione eveniet quibusdam perferendis, quam ex optio voluptatibus facere reprehenderit! Corrupti repellendus tempore rem velit molestias quidem minima eveniet ipsa!
-            Dolorum nisi temporibus repellendus quibusdam? Doloremque odit perferendis similique sed quas illum totam architecto officiis obcaecati ipsa nam, a deserunt delectus laboriosam doloribus repellat eos velit quo! Magnam, animi nostrum.
-            Qui, ipsa quidem libero amet facere laudantium beatae, fugit sequi natus sapiente tempora ab repellendus veritatis. Iure hic, earum ratione esse labore eius dolor, reiciendis nam incidunt iusto magnam! Repellat!
-            Consequatur voluptatibus ex dolore excepturi dignissimos sapiente nostrum, aliquam eum inventore sed dolorum sint veritatis quos quia minima reiciendis expedita. Odit in quisquam voluptatem quos at debitis. Veritatis, sint iste.</p>
+    <div class="container">
+        <div class="card" id="html">
+            <img src="../Images/html.png">
+            <h3>Introduction To HTML</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quia. Rem soluta odio, nulla
+                accusamus
+                consequuntur facere nisi cumque in qui, eaque labore amet dolore voluptas temporibus? Libero aliquam
+                numquam deleniti necessitatibus, consectetur pariatur repellendus, repellat optio nemo itaque voluptatum
+            </p>
+            <div>
+                <a href="../SubPages/html.htm">Read More</a>
+            </div>
         </div>
-        <div class="oper" id="box2">
-            <img src="../images/css.png" alt="">
-            <h3>Introduction to CSS.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veniam, expedita explicabo quas cupiditate aperiam dolorem eius alias suscipit in aspernatur animi facilis. Voluptatum deleniti aperiam necessitatibus inventore neque alias?
-            Perspiciatis adipisci, recusandae rerum dolorum autem minus iure deserunt maiores eos tempora quis, quaerat impedit eaque beatae culpa, repudiandae repellendus ducimus? Aspernatur, facere consequatur pariatur ipsam iusto quas architecto doloribus!
-            Voluptate, accusantium? Sunt itaque temporibus ratione laborum minus eius expedita est nesciunt numquam. Et, deserunt dolore! Necessitatibus, quidem sapiente non libero nobis cumque similique minus odio, velit, laboriosam facilis fugiat.
-            Quae voluptatum modi id eveniet enim quisquam sequi velit atque nobis. Iusto, provident deserunt asperiores enim animi commodi quis. Enim, excepturi amet quos quod dolorem assumenda minima dolore aut nisi.
-            Voluptates corrupti, nulla tempore eaque perferendis quia maiores eos, corporis praesentium accusantium quisquam numquam repudiandae, ut rem dolorem ab eius culpa quos quasi! Vel velit alias tenetur hic magni expedita!</p>
+        <div class="card" id="css">
+            <img src="../Images/css.png">
+            <h3>Introduction To CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a ratione voluptatum magni ut. Ratione ea
+                nobis quos recusandae sapiente, eaque blanditiis magni pariatur, voluptate beatae, dicta ad in sit
+                debitis cum sint rem ullam doloremque eveniet? Est iusto dolorem enim rerum deleniti voluptates id
+            </p>
+            <div>
+                <a href="../SubPages/css.htm">Read More</a>
+            </div>
         </div>
-        <div class="oper" id="box3">
-            <img src="../images/jquery.png" alt="">
-            <h3>Introduction to JQUERY.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis atque aliquid ipsa sunt, nisi, cumque iure voluptates nemo optio aspernatur laborum nostrum qui. Dolores veritatis amet laudantium eaque nisi!
-            Maxime, id quo. Sunt iste esse placeat, modi explicabo expedita iusto? Temporibus velit maxime, nisi voluptatibus eveniet officiis exercitationem id ratione at dignissimos animi laudantium, dolorum totam accusamus sunt itaque.
-            Aspernatur earum assumenda expedita, hic consequuntur consequatur delectus soluta, veritatis nihil harum ut molestias! Tempore repellendus eum dolores ad dolore, rem assumenda consequatur ea laboriosam porro, laudantium cum qui dicta?
-            Cupiditate harum libero id quisquam illo totam. Quos corrupti officiis ut recusandae inventore quasi commodi repellendus quis optio laboriosam ipsam eum voluptas perferendis, ex quisquam repellat. Recusandae itaque voluptatibus aliquam.
-            Mollitia sunt nihil eos ipsum nam delectus, assumenda dolore, voluptatem odit dignissimos ab recusandae architecto, dolor quibusdam ratione maxime quod doloribus ut perferendis voluptas facere? Dolores reiciendis omnis obcaecati veniam!</p>
+        <div class="card" id="jquery">
+            <img src="../Images/jquery.png">
+            <h3>Introduction To jQuery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eaque fugiat enim fuga molestiae
+                voluptates totam, autem minima, repudiandae ad nesciunt eos? Nemo, amet quos? Sit iure error blanditiis
+                nesciunt tempora dolores quod! Incidunt eligendi deserunt quaerat voluptatem facere, quae magni ipsum
+            </p>
+            <div>
+                <a href="../SubPages/jquery.htm">Read More</a>
+            </div>
         </div>
-        <div class="oper" id="box4">
-            <img src="../images/bootstrap.jpg" alt="">
-            <h3>Introduction to BOOTSTRAP.</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vel hic inventore fuga non nemo necessitatibus, aliquid sapiente cupiditate pariatur consequuntur ullam consectetur eum illum in molestias? Dolorum, enim iusto.
-            Repudiandae maxime, amet ab porro eos eaque reiciendis dolor sapiente vero eveniet praesentium odit quibusdam accusamus hic velit cumque quos impedit ullam quia veritatis ducimus earum perspiciatis nemo? Dolorem, rerum?
-            Consectetur nihil animi tempora molestias, aliquam iste facere, rem illum, sapiente molestiae alias eum maiores quia! Totam ipsum harum perspiciatis rem, a molestias. Maiores atque molestiae est similique, beatae animi.
-            Et rerum delectus doloribus velit nesciunt? Corporis in qui ducimus at necessitatibus sunt odit et, atque numquam voluptatum dolores commodi amet tenetur culpa minima modi veritatis, distinctio officiis. Et, doloribus.
-            Soluta dignissimos quod commodi officiis obcaecati ea accusantium impedit maiores, eveniet vero cupiditate modi numquam saepe nisi tempora totam, architecto laboriosam deserunt nihil fugiat dolor. Temporibus itaque quas perspiciatis quis.</p>
+        <div class="card" id="bootstrap">
+            <img src="../Images/bootstrap.jpg">
+            <h3>Introduction To BootStrap</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nihil fugit fugiat reprehenderit
+                voluptatibus sapiente neque qui a magnam! Rerum iusto magnam esse incidunt eos cupiditate corrupti id
+                atque, ullam cum non corporis possimus laudantium maxime mollitia quasi rerum. Eaque delectus molestias
+            </p>
+            <div>
+                <a href="../SubPages/bootstrap.htm">Read More</a>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
