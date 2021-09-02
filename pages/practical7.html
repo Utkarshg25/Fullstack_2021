@@ -4,30 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical-7</title>
+    <title>Practical 7</title>
     <style>
-        #header{
-            height: 8vh;
-            padding: 10px;
+        .header {
+            background-color: gray;
             text-align: center;
-            background-color:gray;
-            border: 10px;
+            padding: 10px;
         }
-        #banner{
-            height: 60vh;
-            border: 10px;
-            background-color: lightskyblue;
+        .banner {
+            margin-top: 10px;
+            background-color: aqua;
+            text-align: center;
+            padding: 180px;
+        }
+        .section1 {
+            margin-top: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .profile {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+        .image {
+            background-color: gold;
+            height: 160px;
+            width: 160px;
+            border-radius: 100%;
+        }
+        .section2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .mainContent{
+            display: flex;
+            background-color: gray;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        .articleBox {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-left: 8px;
+        }
+        .article {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: orange;
+            text-align: center;
+            height: 50px;
+        }
+        #article2 {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .section3 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .collection {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box {
+            background-color: red;
+            height: 250px;
+            width: 25%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .section4 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer {
+            margin-top: 5px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
         }
     </style>
 </head>
 <body>
-    <div id="header">header</div>
-    <div id="banner">banner</div>
-    <div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+    <div class="header">Header</div>
+    <div class="banner">Banner</div>
+    <div class="section1">
+        Section 1
+        <div class="profile">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </div>
+    <div class="section2">
+        Section 2
+        <div class="main">
+            <div class="mainContent">Main Content</div>
+            <div class="articleBox">
+                <div class="article">Article-1</div>
+                <div class="article" id="article2">Article-2</div>
+                <div class="article">Article-3</div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        Section 3
+        <div class="collection">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <div class="section4">
+        Section 4
+        <div class="footer">Footer</div>
     </div>
 </body>
 </html>
