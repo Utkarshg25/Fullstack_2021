@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 7</title>
+    <style>
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: gray;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+        .headerLink {
+            padding: 5px 15px;
+            text-decoration: none;
+            color: black;
+        }
+        .headerLink:hover {
+            background-color: white;
+        }
+        .banner {
+            margin-top:60px;
+            color: white;
+            height: 500px;
+            font-weight: 400;
+            font-size: 40px;
+            padding: 10px;
+            background-color: aqua;
+            background-image: url(https://imgur.com/qIxEnMl.jpg);
+        background-size: cover;
+        background-position: center;
+        }
+        .section1 {
+            margin-top: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .profile {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+        .image {
+            background-color: gold;
+            height: 160px;
+            width: 160px;
+            border-radius: 100%;
+        }
+        .section2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .mainContent{
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        .articleBox {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-left: 8px;
+        }
+        .article {
+            display: flex;
+            font-size: 20px;
+            font-weight: 300;
+            justify-content: center;
+            background-color: orange;
+            height: 33%;
+        }
+        #article1 {
+            background-image: url(https://imgur.com/JyMz0CR.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #article2 {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            background-image: url(https://imgur.com/GFLWoXM.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #article3 {
+            background-image: url(https://imgur.com/uzmZqZA.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .section3 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .collection {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .box {
+            background-color: red;
+            height: 250px;
+            width: 25%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .section4 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer {
+            margin-top: 5px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            width: 20%;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 2%;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card div {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: red;
+        }
+
+        .card div:hover {
+            background-color: blue;
+        }
+
+        .card div a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#top" class="headerLink">Home</a>
+        <a href="#about" class="headerLink">About</a>
+        <a href="#team" class="headerLink">Team</a>
+        <a href="#technologies" class="headerLink">Technologies</a>
+        <a href="#contact" class="headerLink">Contact</a>
+    </div>
+    <div class="banner" id="top">PRACTICAL-8</div>
+    <div class="section1" id="team">
+        <h1>Team Members</h1>
+        <div class="profile">
+            <div class="image">
+                <img class="image" src="https://imgur.com/aFFF1uw.jpg" alt="" />
+            </div>
+            <div class="image">
+                <img class="image" src="https://imgur.com/dIAsZGb.png" alt="" />
+            </div>
+            <div class="image">
+                <img class="image" src="https://imgur.com/GIikFy7.png" alt="" />
+            </div>
+            <div class="image">
+                <img class="image" src="https://imgur.com/JvDB5AN.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="section2" id="about">
+        <h1>About Us</h1>
+        <div class="main">
+            <div class="mainContent">
+                <h2>About Projects</h2>
+                temporibus similique sit tenetur quasi exercitationem! Repellat
+                obcaecati quibusdam iste explicabo laborum veritatis velit
+                accusantium animi dolorum nemo ut quam, quo cum in suscipit
+                fugiat minima corrupti voluptates tempora alias aspernatur esse
+                dolore iure? Libero iste quo nam sequi nulla, minima architecto
+                est cum expedita omnis enim culpa reiciendis nesciunt quod
+                deserunt, nostrum corporis tempore impedit veritatis ut
+                perspiciatis rerum. Amet, harum pariatur. Quo dolorum
+                necessitatibus eos beatae eveniet, earum cum blanditiis,
+                accusamus vitae, nisi voluptas dignissimos modi quibusdam aut
+                veniam deserunt accusantium possimus atque? Distinctio voluptas
+                nemo, fuga laboriosam perspiciatis eum debitis nesciunt quidem
+                iure ratione! Eaque ea eum maxime temporibus dolor nostrum, iure
+                enim, vero in atque quod animi! Mollitia alias magnam nisi
+                suscipit ab ducimus dolores provident. Distinctio veritatis
+                quaerat explicabo fuga neque culpa facere suscipit vel, totam
+                quasi!
+            </div>
+            <div class="articleBox">
+                <div class="article" id="article1">Article-1</div>
+                <div class="article" id="article2">Article-2</div>
+                <div class="article" id="article3">Article-3</div>
+            </div>
+        </div>
+    </div>
+    <div class="section3" id="technologies">
+        <h1>Technologies Used</h1>
+        <div class="collection">
+            <div class="card" id="html">
+                <img src="../Images/html.png">
+                <h3>Introduction To HTML</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quia. Rem soluta odio, nulla
+                    accusamus
+                    consequuntur facere nisi cumque in qui, eaque labore amet dolore voluptas temporibus?
+                </p>
+                <div>
+                    <a href="../SubPages/html.htm">Read More</a>
+                </div>
+            </div>  
+        <div class="card" id="css">
+            <img src="../Images/css.png">
+            <h3>Introduction To CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a ratione voluptatum magni ut. Ratione ea
+                nobis quos recusandae sapiente, eaque blanditiis magni pariatur, voluptate beatae, dicta ad in sit
+                um deleniti voluptates id
+            </p>
+            <div>
+                <a href="../SubPages/css.htm">Read More</a>
+            </div>
+        </div>
+        <div class="card" id="jquery">
+            <img src="../Images/jquery.png">
+            <h3>Introduction To jQuery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eaque fugiat enim fuga molestiae
+                voluptates totam, autem minima, repudiandae ad nesciunt eos? Nemo, amet quos? Sit iure error blanditiis
+                
+            </p>
+            <div>
+                <a href="../SubPages/jquery.htm">Read More</a>
+            </div>
+        </div>
+        <div class="card" id="bootstrap">
+            <img src="../Images/bootstrap.jpg">
+            <h3>Introduction To BootStrap</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nihil fugit fugiat reprehenderit
+                voluptatibus sapiente neque qui a magnam! Rerum iusto magnam esse incidunt eos 
+            </p>
+            <div>
+                <a href="../SubPages/bootstrap.htm">Read More</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="section4" id="contact">
+        <h1>Contact</h1>
+        <div class="footer">
+            Website Template for Practical-8
+            <a href="#top">Back To Top</a>
+        </div>
+    </div>
+</body>
+</html>
