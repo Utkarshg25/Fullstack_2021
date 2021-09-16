@@ -109,3 +109,12 @@ span{
     width: 80%;
     margin-left: 20%;
 }
+@media (max-width:768px) {
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+    .header h1{
+        display: none;
+    }
+}
