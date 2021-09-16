@@ -26,23 +26,25 @@ position: fixed;
     padding: 20px;
 }
 .content img{
-    width: fit-content;
+    width: 100%;
     max-width: 700px;
     display: block;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 .content p{
-    margin-left: 20%;
-    padding: 15px;
-    text-align: center;
+    text-align: justify;
+    padding: 0px 15px;
 }
 .sidebar{
     width: 20%;
     height: 100%;
     position: fixed;
     top: 70px;
+    left: -100%;
     background-color: #061920 ;
+    transition: 0.7s;
 }
 
 .sidebar ul{
@@ -82,4 +84,28 @@ i{
 }
 span{
     margin:20px;
+}
+.show-btn , .hide-btn{
+    font-size:35px;
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+
+}
+.hide-btn{
+    opacity: 0;
+}
+#chk:checked~ .sidebar{
+    left: 0%;
+}
+#chk:checked~ .show-btn{
+    opacity: 0;
+}
+#chk:checked~ .hide-btn{
+    opacity: 1;
+}
+#chk:checked~ .content{
+    width: 80%;
+    margin-left: 20%;
 }
