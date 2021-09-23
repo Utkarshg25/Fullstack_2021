@@ -1,0 +1,55 @@
+footer {
+  background-color: rgb(58, 55, 55);
+  list-style: none;
+  color: white;
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(104, 94, 94);
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+}
+.about {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.about p {
+  color: rgb(104, 94, 94);
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+.quick_links {
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.contact li {
+  color: rgb(104, 94, 94);
+}
+.register {
+  text-align: center;
+}
+.register button {
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
