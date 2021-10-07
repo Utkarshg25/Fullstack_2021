@@ -22,6 +22,7 @@
             background-color: white;
         }
         caption{
+            background-color: white;
         }
         a{
             text-decoration: none;
@@ -41,6 +42,39 @@
         #cross{
             color: red;
         }
+        table tr:nth-child(even) {
+            background-color: #edf3e2;
+        }
+        table tr:nth-child(odd) th:nth-child(1) {
+            background-color: #c1dcb7;
+        }
+        table tr:nth-child(odd) th:nth-child(2) {
+            background-color: #bad6cd;
+        }
+        table tr:nth-child(odd) th:nth-child(3) {
+            background-color: #bbd3dc;
+        }
+        table tr:nth-child(odd) th:nth-child(4) {
+            background-color: #d5e4bc;
+        }
+        table tr:nth-child(odd) td:nth-child(1) {
+            background-color: #c1dcb7;
+        }
+        table tr:nth-child(odd) td:nth-child(2) {
+            background-color: #bad6cd;
+        }
+        table tr:nth-child(odd) td:nth-child(3) {
+            background-color: #bbd3dc;
+        }
+        table tr:nth-child(odd) td:nth-child(4) {
+            background-color: #d5e4bc;
+        }
+        table tr th {
+            padding: 15px;
+        }
+        table tr:nth-child(13) td {
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
@@ -49,10 +83,10 @@
             <table>
                 <caption>SELECT YOUR PLAN</caption>
                 <tr>
-                    <th><i class="fas fa-building"></i>Basic</th>
-                    <th>Plus</th>
-                    <th>Deluxe</th>
-                    <th>Pro</th>
+                    <th><i class="fa fa-building"></i>Basic</th>
+                    <th><i class="fab fa-superpowers"></i>Plus</th>
+                    <th><i class="fab fa-telegram"></i>Deluxe</th>
+                    <th><i class="fa fa-tachometer-alt"></i>Pro</th>
                 </tr>
                 <tr>
                     <td>Rs.500</td>
